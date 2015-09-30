@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="stylesheets/github-dark.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script src="javascripts/main.js"></script>
+    <link rel="stylesheet" href="javascripts/leaflet.css" />
+	<script src="javascripts/leaflet.js"></script>
     <!--[if lt IE 9]>
       <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -41,7 +43,21 @@
       <section>
         <h3><a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span class="octicon octicon-link"></span></a>Franco Román Meola</h3>
 		<h4>ITBA 2015 2C</h4>
-		<p>Hola Mundo!</p>
+		</br></br>
+		<h1>Google Location History</h1>
+		<iframe width="100%" height="520" frameborder="0" src="https://francoroman.cartodb.com/viz/2c866520-67b5-11e5-89ca-0e31c9be1b51/embed_map" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+		</br></br>
+		<h1>Mi Barrio</h1>
+		<div id="map" style="width: 600px; height: 600px"></div>
+		<script src="javascripts/simpleMap.js"></script>
+		<script>
+			var marker = L.marker([-34.6059278,-58.3793152]).addTo(map);
+			var popup = L.popup().setContent(
+				'<div class="container">' +
+				'<h3>Centro de Mi Barrio</h3>' +
+				'</div>');
+			marker.bindPopup(popup);
+		</script>
       </section>
       <footer>
         <p>Project maintained by <a href="https://github.com/fmeola">fmeola</a></p>
