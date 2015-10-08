@@ -1,70 +1,69 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Spatialdb by fmeola</title>
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/github-dark.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="javascripts/main.js"></script>
-    <link rel="stylesheet" href="javascripts/leaflet.css" />
-	<script src="javascripts/leaflet.js"></script>
-    <!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-
-  </head>
-  <body>
-
-      <header>
-        <h1>spatialdb</h1>
-        <p>Base de Datos Espaciales y Sistemas de Información Geográfica</p>
-      </header>
-
-      <div id="banner">
-        <span id="logo"></span>
-
-        <a href="https://github.com/fmeola/spatialdb" class="button fork"><strong>View On GitHub</strong></a>
-        <div class="downloads">
-          <span>Downloads:</span>
-          <ul>
-            <li><a href="https://github.com/fmeola/spatialdb/zipball/master" class="button">ZIP</a></li>
-            <li><a href="https://github.com/fmeola/spatialdb/tarball/master" class="button">TAR</a></li>
-          </ul>
-        </div>
-      </div><!-- end banner -->
-
-    <div class="wrapper">
-      <nav>
-        <ul></ul>
-      </nav>
-      <section>
-        <h3><a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span class="octicon octicon-link"></span></a>Franco Román Meola</h3>
-		<h4>ITBA 2015 2C</h4>
-		</br></br>
-		<h1>Google Location History</h1>
-		<img source="images/GoogleLocationHistory.png">
-		</br></br>
-		<h1>Mi Barrio</h1>
-		<div id="map" style="width: 600px; height: 600px"></div>
-		<script src="javascripts/simpleMap.js"></script>
-		<script>
-			var marker = L.marker([-34.6059278,-58.3793152]).addTo(map);
-			var popup = L.popup().setContent(
-				'<div class="container">' +
-				'<h3>Centro de Mi Barrio</h3>' +
-				'</div>');
-			marker.bindPopup(popup);
-		</script>
-      </section>
-      <footer>
-        <p>Project maintained by <a href="https://github.com/fmeola">fmeola</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></small></p>
-      </footer>
-    </div>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-    
-  </body>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="chrome=1">
+		<title>Spatialdb by fmeola</title>
+		<link rel="stylesheet" href="stylesheets/styles.css">
+		<link rel="stylesheet" href="stylesheets/github-dark.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<script src="javascripts/main.js"></script>
+		<link rel="stylesheet" href="javascripts/leaflet.css" />
+		<script src="javascripts/leaflet.js"></script>
+		<script type="text/javascript" src="/highslide/highslide.js"></script>
+		<link rel="stylesheet" type="text/css" href="/highslide/highslide.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	</head>
+  
+	<body>
+		<header>
+			<h1>spatialdb</h1>
+			<p>Base de Datos Espaciales y Sistemas de Información Geográfica</p>
+		</header>
+	
+		<div id="banner">
+			<span id="logo"></span>
+			<a href="https://github.com/fmeola/spatialdb" class="button fork"><strong>Ver en GitHub</strong></a>
+			<div class="downloads">
+				<span>Descargas</span>
+				<ul>
+				<li><a href="https://github.com/fmeola/spatialdb/zipball/master" class="button">ZIP</a></li>
+				<li><a href="https://github.com/fmeola/spatialdb/tarball/master" class="button">TAR</a></li>
+				</ul>
+			</div>
+		</div>
+	
+		<div class="wrapper">
+			<nav>
+			<ul></ul>
+			</nav>
+			<section>
+				<h3>Trabajos Prácticos de la materia Base de Datos Espaciales y Sistemas de Información Geográfica</h3>
+				<h4>Franco Román Meola</h4>
+				<p>ITBA 2015 2C</p>
+				</br>
+				<!-- TP Google Location History -->
+				<h1 name="tp1">Google Location History</h1>
+				<a href="images/GoogleLocationHistory.png" class="highslide" onclick="return hs.expand(this)">
+				<img src="images/GoogleLocationHistory.png" alt="Highslide JS" title="Click to enlarge" width="600" height="345"/></a>
+				</br></br>
+				<!-- TP Mi Barrio -->
+				<h1>Mi Barrio</h1>
+				<div id="map" style="width: 600px; height: 600px"></div>
+				<script src="javascripts/simpleMap.js"></script>
+				<script>
+					var marker = L.marker([-34.6059278,-58.3793152]).addTo(map);
+					var popup = L.popup().setContent(
+					'<div class="container">' +
+					'<h3>Centro de Mi Barrio</h3>' +
+					'</div>');
+					marker.bindPopup(popup);
+				</script>
+			</section>
+			<footer>
+				<p>Proyecto mantenido por <a href="https://github.com/fmeola">fmeola</a></p>
+				<p><small>Hosteado en GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></small></p>
+			</footer>
+		</div>
+	</body>
 </html>
